@@ -18,6 +18,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (django-authentication-course-01.Install)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="@popperjs/core" level="application" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
