@@ -34,24 +34,33 @@
                     </a>
                 </li>
                 {% if not request.user.is_authenticated %}
-                <li class="nav-item text-center mx-2 mx-lg-1">
-                    <a class="nav-link" href="{% url 'login' %}">
-                        <div>
-                            <i class="far fa-envelope fa-lg mb-1"></i>
-                            <span class="badge rounded-pill badge-notification bg-warning">11</span>
-                        </div>
-                        Login
-                    </a>
-                </li>
+                    <li class="nav-item text-center mx-2 mx-lg-1">
+                        <a class="nav-link" href="{% url 'login' %}">
+                            <div>
+                                <i class="far fa-envelope fa-lg mb-1"></i>
+                                <span class="badge rounded-pill badge-notification bg-warning">11</span>
+                            </div>
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item text-center mx-2 mx-lg-1">
+                        <a class="nav-link" href="{% url 'signup' %}">
+                            <div>
+                                <i class="far fa-envelope fa-lg mb-1"></i>
+                                <span class="badge rounded-pill badge-notification bg-warning">11</span>
+                            </div>
+                            Sign up
+                        </a>
+                    </li>
                 {% endif %}
                 {% if request.user.is_authenticated %}
-                <li class="nav-item text-center mx-2 mx-lg-1">
-                    <a class="nav-link" href="{% url 'logout' %}">
-                        <div>
-                            <i class="far fa-envelope fa-lg mb-1"></i>
-                            <span class="badge rounded-pill badge-notification bg-warning">11</span>
-                        </div>
-                        Logout
+                    <li class="nav-item text-center mx-2 mx-lg-1">
+                        <a class="nav-link" href="{% url 'logout' %}">
+                            <div>
+                                <i class="far fa-envelope fa-lg mb-1"></i>
+                                <span class="badge rounded-pill badge-notification bg-warning">11</span>
+                            </div>
+                            Logout
                     </a>
                 </li>
                 {% endif %}
