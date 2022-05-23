@@ -17,7 +17,7 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
                 <li class="nav-item text-center mx-2 mx-lg-1">
-                    <a class="nav-link active" aria-current="page" href="#!">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">
                         <div>
                             <i class="fas fa-home fa-lg mb-1"></i>
                         </div>
@@ -34,12 +34,12 @@
                     </a>
                 </li>
                 <li class="nav-item text-center mx-2 mx-lg-1">
-                    <a class="nav-link disabled" aria-disabled="true" href="#!">
+                    <a class="nav-link" href="{% url 'login' %}">
                         <div>
                             <i class="far fa-envelope fa-lg mb-1"></i>
                             <span class="badge rounded-pill badge-notification bg-warning">11</span>
                         </div>
-                        Disabled
+                        Login
                     </a>
                 </li>
                 <li class="nav-item dropdown text-center mx-2 mx-lg-1">
