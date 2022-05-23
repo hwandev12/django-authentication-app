@@ -33,6 +33,7 @@
                         Link
                     </a>
                 </li>
+                {% if not request.user.is_authenticated %}
                 <li class="nav-item text-center mx-2 mx-lg-1">
                     <a class="nav-link" href="{% url 'login' %}">
                         <div>
@@ -42,6 +43,18 @@
                         Login
                     </a>
                 </li>
+                {% endif %}
+                {% if request.user.is_authenticated %}
+                <li class="nav-item text-center mx-2 mx-lg-1">
+                    <a class="nav-link" href="{% url 'logout' %}">
+                        <div>
+                            <i class="far fa-envelope fa-lg mb-1"></i>
+                            <span class="badge rounded-pill badge-notification bg-warning">11</span>
+                        </div>
+                        Logout
+                    </a>
+                </li>
+                {% endif %}
                 <li class="nav-item dropdown text-center mx-2 mx-lg-1">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-mdb-toggle="dropdown"
